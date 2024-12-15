@@ -19,4 +19,4 @@ inputs:
 
 runs:
   using: docker
-  image: docker://ghcr.io/adalbertjnr/async_terraform:latest
+  image: docker://ghcr.io/adalbertjnr/tf-async-run:latest
