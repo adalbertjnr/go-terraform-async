@@ -12,7 +12,7 @@ inputs:
     default: 1
   version:
     description: "terraform version"
-    default: "1.7.0"
+    default: "1.9.5"
   debug:
     description: "debug option true or false"
     default: true
