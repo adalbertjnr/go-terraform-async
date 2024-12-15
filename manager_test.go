@@ -24,6 +24,7 @@ func TestTerraformManager(t *testing.T) {
 	flag.StringVar(&inputVersion, "version", "1.9.5", "terraform version")
 	flag.BoolVar(&enableDebug, "DEBUG", false, "enable debug option")
 	flag.IntVar(&inputWorker, "workers", 3, "set the number of workers to run concurrently")
+	flag.Parse()
 
 	tasks := []string{"testCase1", "testCase2", "testCase3", "testCase4", "testCase5", "testCase6", "testCase7", "testCase8", "testCase9", "testCase10"}
 

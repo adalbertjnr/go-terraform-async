@@ -22,6 +22,7 @@ func main() {
 	flag.StringVar(&inputVersion, "version", "1.9.5", "terraform version")
 	flag.BoolVar(&enableDebug, "debug", false, "enable debug option")
 	flag.IntVar(&inputWorker, "workers", 2, "set the number of workers to run concurrently")
+	flag.Parse()
 
 	var logLevel slog.Level
 	logLevel = slog.LevelInfo
