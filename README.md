@@ -2,7 +2,7 @@
 
 ### Overview
 
-The ideia is to specify the project names containing `.tf` files under the `task` string while using the async_terraform action. (there is an example below).
+The ideia is to specify the project names containing `.tf` files under the `task` string while using the tf-asyn-run action. (there is an example below).
 
 Then the action will run all projects concurrently based on the number os workers configured.
 
@@ -65,6 +65,7 @@ jobs:
 
       - name: Terraform Task
         uses: adalbertjnr/tf-async-run@v1
+        debug: true
         with:
           verb: ${{ inputs.verb }}
           version: "1.9.5"
@@ -126,6 +127,7 @@ jobs:
           workers: 2
           verb: ${{ inputs.verb }}
           version: "1.9.5"
+          debug: true
           tasks: |
             terraform_1,
             terraform_2,

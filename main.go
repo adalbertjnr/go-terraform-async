@@ -34,12 +34,12 @@ func main() {
 	logger := slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{Level: logLevel}))
 	slog.SetDefault(logger)
 
-	slog.Debug("init input variables", "user", inputUser)
-	slog.Debug("init input variables", "verb", inputVerb)
-	slog.Debug("init input variables", "tasks", inputTasks)
-	slog.Debug("init input variables", "version", inputVersion)
-	slog.Debug("init input variables", "workers", inputWorker)
-	slog.Debug("init input variables", "debug", enableDebug)
+	slog.Debug("argument variables", "user", inputUser)
+	slog.Debug("argument variables", "verb", inputVerb)
+	slog.Debug("argument variables", "tasks", inputTasks)
+	slog.Debug("argument variables", "version", inputVersion)
+	slog.Debug("argument variables", "workers", inputWorker)
+	slog.Debug("argument variables", "debug", enableDebug)
 
 	terraform, err := NewTerraformService(terraformInstaller, inputVersion)
 	if err != nil {
