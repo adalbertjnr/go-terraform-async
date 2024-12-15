@@ -1,0 +1,22 @@
+name: Terraform_async
+description: run terraform concurrently
+inputs:
+  tasks:
+    description: "terraform project folders"
+    default: "."
+  verb:
+    description: "plan, apply or destroy"
+    required: true
+  workers:
+    description: "insert the number of workers to run concurrently"
+    default: 1
+  version:
+    description: "terraform version"
+    default: "1.7.0"
+  debug:
+    description: "debug option true or false"
+    default: true
+
+runs:
+  using: docker
+  image: docker://ghcr.io/adalbertjnr/async_terraform:latest
