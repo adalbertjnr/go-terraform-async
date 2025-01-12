@@ -64,7 +64,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Terraform Task
-        uses: adalbertjnr/tf-async-run@v1
+        uses: adalbertjnr/go-terraform-async@v1
         debug: true
         with:
           verb: ${{ inputs.verb }}
@@ -122,7 +122,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Terraform Task
-        uses: adalbertjnr/tf-async-run@v1
+        uses: adalbertjnr/go-terraform-async@v1
         with:
           workers: 2
           verb: ${{ inputs.verb }}
