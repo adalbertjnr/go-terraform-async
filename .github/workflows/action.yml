@@ -14,5 +14,5 @@ jobs:
 
       - name: Build
         run: |
-          docker build . --tag ghcr.io/adalbertjnr/tf-async-run:latest
-          docker push ghcr.io/adalbertjnr/tf-async-run:latest
+          docker build . --tag ghcr.io/adalbertjnr/go-terraform-async:latest
+          docker push ghcr.io/adalbertjnr/go-terraform-async:latest
